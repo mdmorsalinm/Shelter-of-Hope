@@ -245,3 +245,42 @@ body {
     width: 100%;
     height: 100px;
 }
+
+
+/* Top section content */
+.left-section {
+    padding: 20px;
+}
+
+#donate-left {
+    font-size: 20px;
+    padding: 10px 30px;
+    color: #263333;
+}
+
+#donate-content {
+    margin: 20px;
+}
+
+/* Bottom(Donating) section content*/
+.donate-section {
+    padding: 24px;
+    text-align: bottom;
+    font-size: 18px;
+    color: #2f4f4f;
+}
+
+/* default */
+.single-message {
+    color: black
+}
+
+
+.monthly-message {
+    display: none;
+    color: black;
+}
+
+.donate-section #next {
+    text-align: bottom;
+}
