@@ -4,11 +4,13 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #ebf5eb;
+    width: 100%;
 }
 
 .top {
     background-image: url("background3.jpg");
     height: 750px;
+    width: 100%;
 }
 .top-bar {
     display: flex;
@@ -136,9 +138,9 @@ body {
 .navigation-manual {
     position: absolute;
     width: 700px;
-    margin-top: -40px;
     display: flex;
     justify-content: center;
+    margin-top: 460px;
 }
 
 .manual-btn {
@@ -287,6 +289,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .top {
+        height: 650px;
+        width: 100%;
+    }
 
     .top-bar h6 {
         font-size: 17px;
@@ -327,6 +333,10 @@ body {
 
     .nav-links li a {
         font-size: 12px;
+    }
+
+    .nav-links a:hover {
+        background-color: transparent;
     }
 
     .slogan-section {
@@ -386,6 +396,7 @@ body {
         width: 160px;
         justify-content: center;
         margin-top: 180px;
+        margin-left: 70px;
     }
     
     .manual-btn {
@@ -399,6 +410,7 @@ body {
         width: 160px;
         justify-content: center;
         margin-top: 180px;
+        margin-left: 70px;
     }
     
     .navigation-auto div {
