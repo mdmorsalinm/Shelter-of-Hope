@@ -23,36 +23,92 @@
             <li><a href="donate.html">Donate</a></li>
             <li><a href="aboutus.html">About Us</a></li>
         </ul>
+        </div>
+        <div class="message">
+          <div>
+          <h1>Make a Donation</h1>
+          <div id="donate-content">
+          <pre>Your donation today can provide a warm meal and a safe place to sleep
+for a homeless individual. Just $25 can make a world of difference. 
+Together, we can give hope and help rebuild lives. Donate now and be 
+a part of the change!
+          </pre>
+          </div>
+          </div>
+          <div>
+            <img src="money-logo.png" alt="money">
+          </div>
+        </div>
+    </div>    
+
+    <div class="org-section">
+      <div class="organization">
+        <h1>Care For the Homeless</h1>
+        <pre>
+Care For the Homeless is dedicated to providing shelter and important health services 
+for the homeless. They also engage in public advocacy for the homeless.
+        </pre>
+        <a href="https://careforthehomeless.org/" target="_blank">Checkout their Website</a>
+        <button class="donate-btn" data-link="https://www.careforthehomeless.org/make-a-donation/?_ga=2.114325892.287256314.1722910903-2101493068.1722910903&_gl=1*x58eui*_ga*MjEwMTQ5MzA2OC4xNzIyOTEwOTAz*_ga_BJGMFZQRR4*MTcyMjkxNTczMy4zLjAuMTcyMjkxNTczMy42MC4wLjA.">Donate</button>
+      </div>
+      <div class="organization">
+        <h1>The Salvation Army</h1>
+        <pre>
+The Salvation Army provides emergency and permanent housing for the homeless. They also 
+provide food services and long-term solutions to homelessness such as job training.
+        </pre>
+        <a href="https://www.salvationarmyusa.org/usn/" target="_blank">Checkout their Website</a>
+        <button class="donate-btn" data-link="https://give.salvationarmyusa.org/give/164006/#!/donation/checkout?c_src=USN_Homepage&c_src2=evergreenHero">Donate</button>
+      </div>
+      <div class="organization">
+        <h1>Coalition for the Homeless</h1>
+        <pre>
+The Coalition for The Homeless provides many services including food, crisis, and housing to the homeless.
+They are the nation’s oldest homeless help organization and are also involved in advocating for policy 
+changes that help the homeless.
+        </pre>
+        <a href="https://www.coalitionforthehomeless.org/" target="_blank">Checkout their Website</a>
+        <button class="donate-btn" data-link="https://www.coalitionforthehomeless.org/donate/">Donate</button>
+      </div>
+      <div class="organization">
+        <h1>NAEH</h1>
+        <pre>
+NAEH is a leading voice on the issue of homelessness in the United States. They focus on developing effective,
+permanent solutions through policy development, research, and advocacy. Their efforts include providing technical
+assistance to communities and promoting best practices in homelessness prevention and intervention.
+        </pre>
+        <a href="https://endhomelessness.org/ending-homelessness/" target="_blank">Checkout their Website</a>
+        <button class="donate-btn" data-link="https://help.endhomelessness.org/donate/?_gl=1*1tpo9gv*_ga*MTU0MjgxODcxMi4xNzIyOTE0MzI2*_ga_MPEM53N02B*MTcyMjkxNDMyNi4xLjEuMTcyMjkxNTk2MC41OC4wLjA.">Donate</button>
+      </div>
     </div>
 
-        <div class="top-section">
-          <div id="donate-top">
-            <h1>Make a Donation</h1>
-            <div id="donate-content">
-              <pre> Your donation today can provide a warm meal and a safe place to sleep
- for a homeless individual. Just $25 can make a world of difference. 
- Together, we can give hope and help rebuild lives. Donate now and be 
- a part of the change!
-              </pre>
-            </div>
-          </div>
-      </div>
-  
-      <div class="donate-section">
-        <div class="single-message">
-          <!-- default -->
-          <button id="donate-once">One-Time</button>
-          <pre>A one time contribution allows us to 
-          </pre>
-        </div>
-        <div class="monthly-message">
-          <button id="donate-monthly">Monthly</button>
-          <pre> A monthly contribution helps us to  
-          </pre>
-          <button id="next">Next →</button>
-        </div>
+    <div id="donation-form" class="donation-form">
+      <div class="form-content">
+          <span class="close-btn">&times;</span>
+          <h2>Donation Form</h2>
+          <form id="donateForm">
+              <a href="#" class="donate-link" target="_blank" id="donationLink">Donate Here</a>
+              <div class="form-group">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName" required>
+              </div>
+              <div class="form-group">
+                  <label for="donationAmount">Donation Amount:</label>
+                  <input type="number" id="donationAmount" name="donationAmount" required>
+              </div>
+              <div class="form-group">
+                  <label for="proofOfDonation">Upload Proof of Donation:</label>
+                  <input type="file" id="proofOfDonation" name="proofOfDonation" accept="image/*" required>
+              </div>
+              <button type="submit">Submit</button>
+          </form>
       </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

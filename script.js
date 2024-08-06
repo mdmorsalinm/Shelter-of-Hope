@@ -26,6 +26,46 @@ document.addEventListener('DOMContentLoaded', () => {
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });
+
+    const donateBtns = document.querySelectorAll('.donate-btn');
+    const donationForm = document.getElementById('donation-form');
+    const closeBtn = document.querySelector('.close-btn');
+    const donationLink = document.getElementById('donationLink');
+    const donateForm = document.getElementById('donateForm');
+
+    donateBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const link = btn.getAttribute('data-link');
+            donationLink.href = link;
+            donationForm.style.display = 'flex';
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        donationForm.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === donationForm) {
+            donationForm.style.display = 'none';
+        }
+    });
+
+    donateForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(donateForm);
+        const data = {
+            firstName: formData.get('firstName'),
+            lastName: formData.get('lastName'),
+            donationAmount: formData.get('donationAmount'),
+            proofOfDonation: formData.get('proofOfDonation')
+        };
+        
+        console.log(data);  // Replace this with actual form submission logic (e.g., AJAX request)
+        donationForm.style.display = 'none';
+        donateForm.reset();
+    });
 });
 
 function toggleMenu() {
