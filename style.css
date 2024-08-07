@@ -259,14 +259,14 @@ body {
 .top .message {
     padding: 20px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 70px;
     display: flex;
 }
 
 .message img {
-    width: 500px;
-    height: 500px;
-    margin-left: 90px;
+    width: 430px;
+    height: 430px;
+    margin-left: 80px;
 }
 
 .message h1 {
@@ -276,7 +276,7 @@ body {
 }
 
 .message #donate-content {
-    font-size: 30px;
+    font-size: 28px;
     color: #2f4f4f;
     margin-top: 10px;
 }
@@ -423,6 +423,38 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+
+.summary-stats {
+    padding: 40px;
+    margin-left: 90px;
+    margin-top: 80px;
+    font-size: 35px;
+    color:rgb(2, 31, 6);
+    display: flex;
+}
+
+.summary-stats img {
+    width: 350px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.statistics {
+    padding: 20px 170px;
+    color: rgb(2, 31, 6);
+    font-size: 24px;
+}
+
+.graphs {
+    margin-bottom: 40px;
+}
+
+.graphs img {
+    width: 1340px;
+    height: auto;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
