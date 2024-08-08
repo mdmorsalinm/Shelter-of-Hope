@@ -225,7 +225,7 @@ body {
     color: #2f4f4f;
     margin-top: 50px;
 }
-.content-section p {
+.content-section pre {
     font-size: 18px;
     color: #2f4f4f;
     line-height: 1.6;
@@ -426,7 +426,7 @@ button[type="submit"]:hover {
 
 .summary-stats {
     padding: 40px;
-    margin-left: 90px;
+    margin-left: 110px;
     margin-top: 80px;
     font-size: 35px;
     color:rgb(2, 31, 6);
@@ -436,11 +436,11 @@ button[type="submit"]:hover {
 .summary-stats img {
     width: 350px;
     height: auto;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .statistics {
-    padding: 20px 170px;
+    padding: 20px 200px;
     color: rgb(2, 31, 6);
     font-size: 24px;
 }
@@ -450,8 +450,9 @@ button[type="submit"]:hover {
 }
 
 .graphs img {
-    width: 1340px;
+    width: 1040px;
     height: auto;
+    margin-left: 150px;
 }
 
 
