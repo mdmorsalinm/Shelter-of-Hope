@@ -8,9 +8,9 @@ setInterval(function() {
 }, 4000);
 
 document.addEventListener('DOMContentLoaded', () => {
-    const faders = document.querySelectorAll('.fade');
+    const faders = document.querySelectorAll('.fade'); // Select all elements with the ID 'fade'
     const options = {
-        threshold: 0.5,
+        threshold: 0.2,
         rootMargin: '0px 0px -50px 0px'
     };
     const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, options);
+    
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });

@@ -241,13 +241,17 @@ body {
         transform: translateY(0);
     }
 }
+
 .fade {
     opacity: 0;
+    transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 .fade-in {
     opacity: 1;
     transform: translateY(0);
+    animation: fadeUp 1s ease;
 }
 
 .bottom {
@@ -428,32 +432,133 @@ button[type="submit"]:hover {
     padding: 40px;
     margin-left: 110px;
     margin-top: 80px;
-    font-size: 35px;
     color:rgb(2, 31, 6);
     display: flex;
 }
 
+.summary-stats h1 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.summary-stats h6 {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.summary-stats pre {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.summary-stats ul {
+    font-size: 18px;
+}
+
+.summary-stats li {
+    margin-bottom: 10px;
+}
+
 .summary-stats img {
-    width: 350px;
+    width: 300px;
     height: auto;
-    margin-left: 80px;
+    margin-left: 90px;
+    margin-top: 80px;
 }
 
 .statistics {
-    padding: 20px 200px;
+    padding: 20px 150px;
     color: rgb(2, 31, 6);
+    font-size: 17px;
+}
+
+.statistics h1 {
     font-size: 24px;
 }
+
+.statistics pre {
+    padding-left: 20px;
+}
+
+
 
 .graphs {
     margin-bottom: 40px;
 }
 
 .graphs img {
-    width: 1040px;
+    width: 900px;
     height: auto;
-    margin-left: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
+
+.solution-stats {
+    padding: 40px;
+    margin-left: 110px;
+}
+
+.solution-stats h1 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.solution-stats h6 {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.solution-stats pre {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+hr {
+    width: 1600px;
+}
+
+.about {
+    color: rgb(2, 31, 6);
+    margin-left: 110px;
+    margin-top: 40px;
+}
+
+.top .about {
+    margin-top: 130px;
+}
+
+.about h5 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about pre {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.about h6 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.about h6 i {
+    font-size: 22px;
+    opacity: 50%;
+}
+
+.about ul {
+    font-size: 22px;
+}
+
+.about li {
+    margin-bottom: 10px;
+}
+
+
 
 
 
